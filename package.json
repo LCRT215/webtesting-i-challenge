@@ -1,0 +1,11 @@
+{
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LCRT215/webtesting-i-challenge.git",
+  "author": "Leslie Thompson <lcrthompson@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch"
+  }
+}
