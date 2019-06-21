@@ -18,3 +18,21 @@ function succeed(item) {
     return { ...item, enhancement: enhancement + 1 };
   }
 }
+
+function fail(item) {
+  const enhancement = item.enhancement;
+  const durability = item.durability;
+
+  if (enhancement < 15) {
+    return { ...item, durability: Math.max(0, durability - 5) };
+  } else {
+    if (enhancement > 16) {
+      return {
+        enhancement: enhancement - 1,
+        durability: Math.max(0, durability - 10)
+      };
+    } else {
+      return { ...item, durability: Math.max(0, durability - 10) };
+    }
+  }
+}
